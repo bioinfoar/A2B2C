@@ -1,0 +1,170 @@
+
+@import url('https://fonts.google.com/?query=lato&preview.text_type=custom&selection.family=Lato:ital,wght@0,400;1,300;1,400');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: 0 none;
+}
+
+body {
+    color: #666666;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    line-height: 45px;
+    font-size: 2.7em;
+    color: #004581;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+h2 {
+    line-height: 45px;
+    font-size: 2.5em;
+    color: #004581;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2.3em;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    margin: 2vw 0;
+}
+
+h6 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 1.06em;
+    color: rgb(85, 85, 85);
+    line-height: 27px;
+    text-align: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.06em;
+    line-height: 27px;
+    text-align: center;
+}
+
+.disable {
+    display: none;
+}
+
+
+/*----------------------------- nav bar -----------------------------*/
+
+
+/*https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    height: 6vw;
+    width: 100%;
+    background: #f3f2f2;
+}
+
+.logofigure {
+    margin: 0 3vw;
+}
+
+.logofigure img {
+    width: auto;
+    height: 4.9vw;
+    margin-top: 2%;
+}
+
+.arrowfigure {
+    margin: 0px -1px 0px 0px;
+}
+
+.arrowfigure img {
+    height: 5.1vw;
+}
+
+.header {
+    background-color: rgb(53, 4, 90);
+    width: 100%;
+    height: 5.1vw;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 .3vw;
+    line-height: 18px;
+}
+
+nav a {
+    color: rgb(254, 254, 254);
+    font-size: 1.1em;
+
+}
+
+
+.active {
+    color: #e7d4f9;
+}
+
+.lang-imige-mobile {
+    display: none;
+}
+
+.ham {
+    display: none;
+}
+
+
+
+/*----------------------------- ABOUT -----------------------------*/
+
+.row {
+    display: flex;
+    padding: 0;
+    margin: 5vw 12vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    padding: 3vw 0vw;
+    margin-right: 2vw;
+    text-align: center;
+}
