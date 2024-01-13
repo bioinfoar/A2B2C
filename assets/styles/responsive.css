@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px){
+    nav {
+        margin: 8px 0;
+    }
+    
+    nav ul {
+        margin: 0;
+        flex-wrap: wrap;
+        width: 63%;
+    }
+
+    .about {
+        margin: 0;
+        padding: 0 2vw;
+    }
+    
+    .about-article {
+        margin-top: 20vh;
+        padding: 0 2vw;
+        height: 90vh;
+    }
+
+    .body-support-img {
+        display: none;
+    }
+
+    footer {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+}

@@ -16,11 +16,15 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    line-height: 45px;
-    font-size: 2.7em;
+    line-height: 1.25em;
+    font-size: 3em;
     color: #004581;
     text-align: center;
     font-weight: bold;
@@ -88,9 +92,10 @@ nav {
     flex-direction: row;
     align-items: flex-start;
     margin: 0;
-    height: 6vw;
+    height: 8vh;
     width: 100%;
     background: #f3f2f2;
+    margin: 10px 0;
 }
 
 .logofigure {
@@ -99,7 +104,7 @@ nav {
 
 .logofigure img {
     width: auto;
-    height: 4.9vw;
+    height: 5vh;
     margin-top: 2%;
 }
 
@@ -108,13 +113,12 @@ nav {
 }
 
 .arrowfigure img {
-    height: 5.1vw;
+    height: 5vh;
 }
 
 .header {
     background-color: white;
     width: 100%;
-    height: 5.1vw;
     display: flex;
     align-items: center;
 }
@@ -135,7 +139,7 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    margin: 0 .3vw;
+    margin: 0 10px;
     line-height: 18px;
 }
 
@@ -143,11 +147,13 @@ nav a {
     color: #004581;
     font-size: 1.1em;
     font-weight: bold;
-
+    line-height: 1.44em;
 }
 
 nav img {
-    width: 133px;
+    height: 8vh;
+    margin: 0;
+    top: 0;
 }
 
 
@@ -170,35 +176,50 @@ nav img {
 .row {
     display: flex;
     padding: 0;
-    margin: 0vw 12vw;
+    margin: 0 10vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .about {
-    padding: 3vw 0vw;
-    margin-right: 2vw;
+    padding: 0 0;
     text-align: center;
-    margin-top: -65px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    flex-grow: 1;
 }
 
-.aboutfigure{
-    height: 92%;
-    margin-left: 306px;
+.about-article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: -5px;
+    padding: 0 15%;
+    width: 100%;
+}
+
+.about-article p {
+    font-size: 1.3em;
+}
+
+.aboutfigure img {
+    z-index: -1;
+    width: 100vw;
 }
 
 .about-button{
     background-color: #2bb9ab;
-    width: 253px;
-    height: 67px;
+    width: 260px;
+    height: 43px;
     display: block;
     color: white;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 5px 0px;
     border-radius: 12px;
     margin-top: 40px;
 }
@@ -206,9 +227,31 @@ nav img {
 
 footer {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-evenly;
-    margin-top: 10vw;
+    height: 8vh;
+    margin: 15px;
+}
+
+.contact-p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.email, .socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.email address {
+    margin-left: 5px;
+}
+
+.social-media-link {
+    margin-left: 5px;
 }
 
 .medialinks {
