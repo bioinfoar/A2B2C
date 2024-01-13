@@ -4,4 +4,3 @@
 > 
 > Created by: Ana Julia Velez Rueda
 >
-> Collaborators: 
