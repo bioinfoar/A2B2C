@@ -1,4 +1,4 @@
-## Women in Bioinformtaics and Data Science Web Site
+## A2B2C Web Site
 
 > This work is licensed under a Creative Commons International License
 > 
