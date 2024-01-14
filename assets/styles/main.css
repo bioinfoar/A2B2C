@@ -307,6 +307,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    align-items: flex-start;
 }
 
 .main-banner button {
@@ -322,4 +323,8 @@ footer {
 .main-banner button:hover {
     background-color: #FF66C4; 
     color: #4a89aa;
+}
+
+.conference-banner {
+    width: 389px;
 }
