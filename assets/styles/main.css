@@ -170,6 +170,11 @@ nav img {
 }
 
 
+main {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 0;
+}
 
 /*----------------------------- ABOUT -----------------------------*/
 
@@ -184,13 +189,10 @@ nav img {
 }
 
 .about {
-    padding: 0 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    flex-grow: 1;
 }
 
 .about-article {
