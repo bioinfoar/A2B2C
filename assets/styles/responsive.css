@@ -1,4 +1,8 @@
 @media screen and (max-width: 800px){
+    h1, h5, h6 {
+        text-align: center;
+    }
+
     nav {
         margin: 8px 0;
     }
@@ -31,5 +35,17 @@
         padding: 20px;
     }
 
+    .conference-banner {
+        display: none;
+    }
+
+    .main-banner {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subpage-footer p,a {
+        justify-content: center;
+    }
 
 }
