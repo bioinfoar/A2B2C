@@ -264,7 +264,12 @@ footer {
 
 
 /*----------------------------- CONFERENCE -----------------------------*/
+.conferences-body {
+    height: 100%;
+}
+
 .conferences {
+    padding-top: 56px;
     border-top: 4px solid #004581;
 }
 
@@ -305,7 +310,7 @@ footer {
     justify-content: left;
 }
 
-.main-banner {
+.main-banner, .commitee-section {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -335,7 +340,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 50px 16%;
+    padding: 112px 16%;
 }
 
 .sponsor-logos {
@@ -346,5 +351,35 @@ footer {
 
 .sponsor-logos img {
     width: 273px;
-    height: 115px;
+    height: 134px;
+}
+
+
+#small-logo {
+    width: 230px;
+    height: 90px;
+}
+
+.commitee-section {
+    padding: 61px 10%;
+}
+
+.committes-div {
+    padding: 56px 0;
+    text-align: left;
+}
+
+.committes-div p {
+    text-align: left;
+}
+
+.commitee-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.mapouter {
+    margin-top: 15px;
 }
