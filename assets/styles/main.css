@@ -26,7 +26,7 @@ h1 {
     line-height: 1.25em;
     font-size: 3em;
     color: #004581;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     margin-bottom: 30px;
     width: 100%;
@@ -58,7 +58,7 @@ h5 {
 
 h6 {
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
 }
 
 p,
@@ -227,10 +227,10 @@ nav img {
 
 footer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
-    height: 8vh;
-    margin: 15px;
+    height: 12vh;
+    margin-top: 15px;
 }
 
 .contact-p {
@@ -288,9 +288,38 @@ footer {
     text-align: left;
 }
 
+/*----------------------------- CONFERENCE MAIN PAGE-----------------------------*/
 
 .subpage-footer {
     width: 100%;
     border-top: 1px solid #004581;
     margin-left: 0;
+    background-color: #004581;
+}
+
+
+.subpage-footer p,a {
+    color: #2bb9ab;
+    justify-content: left;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.main-banner button {
+    background-color: #FF66C4;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #f3f2f2;
+}
+
+.main-banner button:hover {
+    background-color: #FF66C4; 
+    color: #4a89aa;
 }
