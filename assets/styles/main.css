@@ -269,6 +269,7 @@ footer {
 }
 
 .conferences {
+    height: 100vh;
     padding-top: 56px;
     border-top: 4px solid #004581;
 }
@@ -278,7 +279,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 50px 10%;
+    padding: 50px 6%;
 }
 
 .conferences-article {
@@ -336,11 +337,19 @@ footer {
     width: 389px;
 }
 
+.keydates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 50px 12%;
+}
+
 .sponsors-row {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 112px 16%;
+    padding: 112px 12%;
 }
 
 .sponsor-logos {
