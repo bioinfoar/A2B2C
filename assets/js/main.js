@@ -75,3 +75,43 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const yearHeaders = document.querySelectorAll('.authority-year.collapsed h3');
+    yearHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const yearElement = this.parentElement;
+            yearElement.classList.toggle('collapsed');
+            
+            const icon = this.querySelector('i');
+            if (icon) {
+                if (yearElement.classList.contains('collapsed')) {
+                    icon.className = 'fas fa-chevron-down';
+                } else {
+                    icon.className = 'fas fa-chevron-up';
+                }
+            }
+        });
+    });
+
+    const yearSelect = document.getElementById('year-select');
+    if (yearSelect) {
+        yearSelect.addEventListener('change', function() {
+            const selectedYear = this.value;
+            const yearElements = document.querySelectorAll('.authority-year');
+            
+            yearElements.forEach(element => {
+                element.style.display = 'none';
+            });
+
+            const selectedElement = document.querySelector(`.authority-year[data-year="${selectedYear}"]`);
+            if (selectedElement) {
+                selectedElement.style.display = 'block';
+                selectedElement.classList.remove('collapsed');
+
+                selectedElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+});
