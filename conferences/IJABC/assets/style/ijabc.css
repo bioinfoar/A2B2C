@@ -243,23 +243,76 @@ section {
     justify-content: center;
 }
 
-.image-placeholder {
+.about-img {
     width: 100%;
-    height: 300px;
-    background: linear-gradient(135deg, #e0efff 0%, #f0f7ff 100%);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #0056a6;
-    border: 3px dashed #0056a6;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    object-fit: cover;
 }
 
-.image-placeholder i {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #0056a6;
+.about-img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-img {
+    border: none;
+    background: none;
+}
+
+.image-placeholder::before {
+    display: none;
+}
+
+.about-content {
+    align-items: flex-start;
+}
+
+.about-text, .about-image {
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+    
+    .about-content {
+        gap: 30px;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .about-img {
+        border-radius: 8px;
+    }
 }
 
 .program-section {
@@ -482,15 +535,9 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     .event-title {
         font-size: 2.8rem;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
     }
     
     .pricing-card.featured {
@@ -557,4 +604,3 @@ section {
         grid-template-columns: 1fr;
     }
 }
-
