@@ -69,7 +69,6 @@ header {
     background: rgba(0, 86, 166, 0.05);
 }
 
-/* Botón especial en navbar */
 .btn-nav {
     background: #0056a6;
     color: white !important;
@@ -86,7 +85,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Dropdown mejorado */
 .dropdown {
     position: relative;
 }
@@ -202,7 +200,6 @@ header {
     color: #666;
 }
 
-/* Grid de eventos estilo SAIB */
 .events-grid {
     display: grid;
     gap: 40px;
@@ -473,6 +470,10 @@ footer a:hover {
     color: #0056a6;
     margin-bottom: 15px;
     font-weight: 700;
+}
+
+h3 {
+    margin-bottom: 15px;
 }
 
 .breadcrumb {
