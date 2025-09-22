@@ -173,6 +173,14 @@ section {
     font-weight: 700;
 }
 
+.section-header h4 {
+    font-size: 1.6rem;
+    color: #346a9d;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
 .section-divider {
     width: 80px;
     height: 4px;
@@ -223,6 +231,37 @@ section {
 .highlight-box ul {
     list-style: none;
 }
+
+.highlight-box {
+    background: #f8f9fa;
+    border-left: 4px solid #007BFF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.highlight-box h3 {
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.key-dates {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-dates li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.key-dates i {
+    margin-right: 8px;
+    color: #007BFF;
+}
+
 
 .highlight-box li {
     margin-bottom: 10px;
