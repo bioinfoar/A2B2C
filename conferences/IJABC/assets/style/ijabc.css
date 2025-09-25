@@ -324,12 +324,11 @@ section {
 }
 
 
-.committee-details summary {
+.committee-details  {
     font-size: 1.5rem;
-    font-weight: bold;
     color: #007BFF;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .committee-details ul {
@@ -432,6 +431,13 @@ section {
 
 .registration-section {
     background: white;
+}
+
+.registration-section h3 {
+    font-size: 1.9rem;
+    color: #0056a6;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .pricing-cards {
@@ -654,6 +660,7 @@ section {
     
     .section-header h2 {
         font-size: 2rem;
+        margin-bottom: 45px;
     }
     
     .pricing-cards {
