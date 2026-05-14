@@ -689,3 +689,16 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+details p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+details summary {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
