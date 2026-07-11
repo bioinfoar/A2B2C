@@ -6,76 +6,6 @@
     <title>XV Congress of the Argentine Association for Bioinformatics and Computational Biology (A2B2C)</title>
     <link rel="stylesheet" href="./assets/style/ijabc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <style>
-        /* Navegación por pestañas */
-        .conference-tabs {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-        }
-
-        .conference-tabs .container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding-top: 14px;
-            padding-bottom: 14px;
-            overflow-x: auto;
-        }
-
-        .tab-button {
-            border: 0;
-            border-radius: 999px;
-            padding: 11px 20px;
-            background: #eef4fb;
-            color: #0b5ea8;
-            font: inherit;
-            font-weight: 700;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        }
-
-        .tab-button:hover {
-            transform: translateY(-1px);
-            background: #dcecff;
-        }
-
-        .tab-button.active {
-            background: #0b5ea8;
-            color: #ffffff;
-        }
-
-        .tab-button:focus-visible {
-            outline: 3px solid #ff64c7;
-            outline-offset: 3px;
-        }
-
-        .tab-panel {
-            display: none;
-        }
-
-        .tab-panel.active {
-            display: block;
-        }
-
-        @media (max-width: 700px) {
-            .conference-tabs .container {
-                justify-content: flex-start;
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-
-            .tab-button {
-                padding: 10px 16px;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -119,33 +49,7 @@
         </div>
     </section>
 
-
-    <nav class="conference-tabs" aria-label="Conference sections">
-        <div class="container" role="tablist">
-            <button class="tab-button active" type="button" role="tab" aria-selected="true"
-                    aria-controls="about-panel" id="about-tab" data-tab="about-panel">
-                About
-            </button>
-
-            <button class="tab-button" type="button" role="tab" aria-selected="false"
-                    aria-controls="speakers-panel" id="speakers-tab" data-tab="speakers-panel">
-                Speakers
-            </button>
-
-            <button class="tab-button" type="button" role="tab" aria-selected="false"
-                    aria-controls="registration-panel" id="registration-tab" data-tab="registration-panel">
-                Registration
-            </button>
-
-            <button class="tab-button" type="button" role="tab" aria-selected="false"
-                    aria-controls="committee-panel" id="committee-tab" data-tab="committee-panel">
-                Committee
-            </button>
-        </div>
-    </nav>
-
-    <section id="about-panel" class="about-section tab-panel active"
-             role="tabpanel" aria-labelledby="about-tab">
+    <section class="about-section">
         <div class="container">
             <div class="section-header">
                 <h2>About the meeting</h2>
@@ -195,7 +99,7 @@
         </div>
     </section>
     
-    <section id="speakers-panel" class="committee-section tab-panel" role="tabpanel" aria-labelledby="speakers-tab">
+    <section id="speakers" class="committee-section">
         
         
         <div class="container">
@@ -340,7 +244,7 @@
         </div>
     </section>
 
-    <section id="registration-panel" class="registration-section tab-panel" role="tabpanel" aria-labelledby="registration-tab">
+    <section class="registration-section">
     <div class="container">
 
         <div class="section-header">
@@ -379,7 +283,7 @@
     </div>
 </section>
 
-    <section id="committee-panel" class="committee-section tab-panel" role="tabpanel" aria-labelledby="committee-tab">
+    <section id="comites" class="committee-section">
         <div class="container">
             <div class="section-header">
                 <h2>Organizing Committee</h2>
@@ -471,57 +375,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const tabButtons = document.querySelectorAll(".tab-button");
-        const tabPanels = document.querySelectorAll(".tab-panel");
-
-        function activateTab(tabId, updateHash = true) {
-            tabButtons.forEach((button) => {
-                const isActive = button.dataset.tab === tabId;
-                button.classList.toggle("active", isActive);
-                button.setAttribute("aria-selected", String(isActive));
-                button.tabIndex = isActive ? 0 : -1;
-            });
-
-            tabPanels.forEach((panel) => {
-                panel.classList.toggle("active", panel.id === tabId);
-            });
-
-            if (updateHash) {
-                history.replaceState(null, "", "#" + tabId);
-            }
-
-            window.scrollTo({
-                top: document.querySelector(".conference-tabs").offsetTop,
-                behavior: "smooth"
-            });
-        }
-
-        tabButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                activateTab(button.dataset.tab);
-            });
-
-            button.addEventListener("keydown", (event) => {
-                const buttons = Array.from(tabButtons);
-                const currentIndex = buttons.indexOf(button);
-
-                if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
-                    event.preventDefault();
-                    const direction = event.key === "ArrowRight" ? 1 : -1;
-                    const nextIndex = (currentIndex + direction + buttons.length) % buttons.length;
-                    buttons[nextIndex].focus();
-                    activateTab(buttons[nextIndex].dataset.tab);
-                }
-            });
-        });
-
-        const requestedPanel = window.location.hash.replace("#", "");
-        if (requestedPanel && document.getElementById(requestedPanel)) {
-            activateTab(requestedPanel, false);
-        }
-    </script>
-
 </body>
 </html>
