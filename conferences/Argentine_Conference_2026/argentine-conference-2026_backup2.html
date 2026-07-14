@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Congress of the Argentine Association for Bioinformatics and Computational Biology (A2B2C)</title>
+    <link rel="stylesheet" href="./assets/style/ijabc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <style>
+        /* Navegación por pestañas */
+        .conference-tabs {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        }
+
+        .conference-tabs .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            overflow-x: auto;
+        }
+
+        .tab-button {
+            border: 0;
+            border-radius: 999px;
+            padding: 11px 20px;
+            background: #eef4fb;
+            color: #0b5ea8;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+
+        .tab-button:hover {
+            transform: translateY(-1px);
+            background: #dcecff;
+        }
+
+        .tab-button.active {
+            background: #0b5ea8;
+            color: #ffffff;
+        }
+
+        .tab-button:focus-visible {
+            outline: 3px solid #ff64c7;
+            outline-offset: 3px;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @media (max-width: 700px) {
+            .conference-tabs .container {
+                justify-content: flex-start;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .tab-button {
+                padding: 10px 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="event-hero">
+        <div class="hero-content">
+            <div class="event-badge">2026 Edition</div>
+            <h1 class="event-title">XV Congress of the Argentine Association for Bioinformatics and Computational Biology (A2B2C)</h1>
+            
+            <div class="event-meta">
+                <div class="meta-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>November 10–12, 2026</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>In presence</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>IFIBYNE, Ciudad Universitaria, Buenos Aires, Argentina</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>9:00 - 18:00 hs</span>
+                </div>
+            </div>
+<!--
+            <div class="hero-actions">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScUubDHa1bGONElInRKBo3dsfOnVGVxogaG-OSDt76JN2PaaQ/viewform" target="_blank" class="btn-hero btn-secondary">
+                    <i class="fas fa-user-plus"></i>Registrarse
+                </a>
+                <a href="https://github.com/bioinfoar/A2B2C/blob/master/conferences/IJABC/assets/docs/IJAB2C_Programa.pdf" target="_blank" class="btn-hero btn-primary">
+                    <i class="fas fa-file-download"></i>Programa
+                </a>
+            </div>
+--> 
+        </div>
+       
+        <div class="hero-pattern">
+            <div class="dna-pattern"></div>
+        </div>
+    </section>
+
+
+    <nav class="conference-tabs" aria-label="Conference sections">
+        <div class="container" role="tablist">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true"
+                    aria-controls="about-panel" id="about-tab" data-tab="about-panel">
+                About
+            </button>
+
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                    aria-controls="speakers-panel" id="speakers-tab" data-tab="speakers-panel">
+                Speakers
+            </button>
+
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                    aria-controls="registration-panel" id="registration-tab" data-tab="registration-panel">
+                Registration
+            </button>
+
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                    aria-controls="committee-panel" id="committee-tab" data-tab="committee-panel">
+                Committee
+            </button>
+        </div>
+    </nav>
+
+    <section id="about-panel" class="about-section tab-panel active"
+             role="tabpanel" aria-labelledby="about-tab">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the meeting</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+        <p>The <b>XV Congress of the Argentine Association for Bioinformatics and Computational Biology (A2B2C)</b> provides a framework to foster the exchange of experiences and initiatives among students, professors, researchers, technicians, and professionals involved in activities related to Bioinformatics and Computational Biology.</p>
+        <p><b>Date</b>: November 10–12, 2026</p>
+        <p><b>Location</b>: IFIBYNE Auditorium, Ciudad Universitaria, Buenos Aires, Argentina</p>
+
+        <p>The plenary lectures and presentations will cover various aspects that bring together the branches of bioinformatics and computational biology with the following thematic tracks:</p>
+
+        <ul style="margin-left: 30px; margin-bottom: 25px;">
+            <li><b>Proteomics and Protein Structure and Function</b></li>
+            <li><b>Evolutionary, Comparative and Population Genomics</b></li>
+            <li><b>Genomics, Transcriptomics, Epigenomics, Metagenomics</b></li>
+            <li><b>Biological Databases and Bioimaging</b></li>
+            <li><b>Artificial Intelligence and Systems Biology</b></li>
+            <li><b>Education</b></li>
+            <li><b>IDPFun2 Special Track</b></li>
+        </ul>
+
+        <p style="margin-top: 10px;"><b>Language</b>: All abstracts and posters must be submitted in English. All oral presentations and plenary talks will be conducted in English.</p>
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-star"></i> Key Dates</h3>
+                        <ul class="key-dates">
+                            <li><i class="far fa-file-alt"></i> Abstract Submission Opens: <strong>August 22</strong></li>
+                            <li><i class="far fa-calendar-check"></i> Abstract Submission Closes: <strong>October 1</strong></li>
+                            <li><i class="fas fa-user-plus"></i> Abstract Selection Announcement: <strong>October 10</strong></li>
+                            <li><i class="fas fa-user-plus"></i> Talk Announcement: <strong>October 11</strong></li>
+                            <li><i class="far fa-calendar-check"></i> Early Registration Deadline: <strong>October 15</strong></li>
+                            <li><i class="far fa-calendar-alt"></i> Congress Date: <strong>November 10–12, 2026</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-dna"></i>
+                        <img class="about-img portrait" src="./assets/img/congreso_laplata.png">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section id="speakers-panel" class="committee-section tab-panel" role="tabpanel" aria-labelledby="speakers-tab">
+        
+        
+        <div class="container">
+            <div class="section-header">
+                <h2>Confirmed Speakers</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="committee-details">
+
+                
+                
+            
+
+    
+    
+
+                
+                <details>
+                    <summary><b>Silvio C. E. Tosatto</b> | Università degli Studi di Padova, Italy</summary>
+                    <img src="./assets/img/Tosatto.png" alt="Silvio C. E. Tosatto" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Full Professor in Bioinformatics and Principal Investigator at the BioComputing UP lab of the Department of Biomedical Sciences, Università degli Studi di Padova. His research focuses on bioinformatics and computational biology, particularly on the structural and mechanistic aspects of complex biological systems.
+                    </p>
+                </details>
+                
+                <details>
+                    <summary><b>Salvador Ventura</b> | Universitat Autònoma de Barcelona, Spain</summary>
+                    <img src="./assets/img/Ventura.png" alt="Salvador Ventura" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Professor of Biochemistry and Molecular Biology at the Universitat Autònoma de Barcelona. His research focuses on protein structure, protein misfolding, conformational diseases, and the development of therapeutic molecules.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Juan Cortes</b> | CNRS, France</summary>
+                    <img src="./assets/img/Cortes.png" alt="Juan Cortes" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Computer scientist specialized in algorithmic robotics and Research Director at CNRS. His interdisciplinary research combines robotics, artificial intelligence, and structural bioinformatics approaches.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Miguel A. Andrade-Navarro</b> | Johannes Gutenberg University Mainz, Germany</summary>
+                    <img src="./assets/img/Andrade.png" alt="Miguel A. Andrade-Navarro" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Professor of Bioinformatics at Johannes Gutenberg University Mainz. His research interests include computational biology, protein and gene function analysis, and data mining approaches in molecular biology.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Henning Hermjakob</b> | EMBL-EBI, United Kingdom</summary>
+                    <img src="./assets/img/Hermjakob.png" alt="Henning Hermjakob" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Leader of the Molecular Systems Cluster at EMBL-EBI. His work focuses on systems biology resources, molecular interaction databases, pathways, and biological data standardization.
+                    </p>
+                </details>
+                
+                <details>
+                    <summary><b>Cristina Marino-Buslje</b> | Fundación Instituto Leloir / CONICET / ITBA, Argentina</summary>
+                    <img src="./assets/img/Marino.png" alt="Cristina Marino-Buslje" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Principal Investigator at CONICET and Head of the Structural Bioinformatics Unit at Fundación Instituto Leloir. Her research focuses on protein structure and evolution, intrinsically disordered proteins, aggregation, and machine learning applications in bioinformatics.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Nathalie Sibille</b> | CNRS / University of Montpellier, France</summary>
+                    <img src="./assets/img/Sibille.png" alt="Nathalie Sibille" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Research Director at CNRS and Team Leader at the University of Montpellier. Trained in Physics and an expert in NMR spectroscopy for Structural Biology, her research focuses on intrinsically disordered proteins (IDPs), post-translational modifications, and the molecular mechanisms regulating GPCR and arrestin interactions.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Gavin Farrell</b> | ELIXIR</summary>
+                    <img src="./assets/img/Farrell.png" alt="Gavin Farrell" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Technical Officer at ELIXIR, supporting the activities of the Data, Interoperability and Compute Platforms. He holds a BSc in Biotechnology and an MSc in Biomedical Genomics, with research experience focused on the gut microbiome and colorectal cancer.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>John Hancock</b> | ELIXIR</summary>
+                    <img src="./assets/img/Hancock.png" alt="John Hancock" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        ELIXIR Communities and Services Coordinator. He promotes collaboration between ELIXIR Nodes and the ELIXIR Hub and leads the development of research communities associated with ELIXIR use cases. He has extensive experience in computational biology, bioinformatics leadership, and research infrastructure management.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Patricia Palagi</b> | SIB Swiss Institute of Bioinformatics / ELIXIR</summary>
+                    <img src="./assets/img/Palagi.png" alt="Patricia Palagi" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Biologist and computer scientist by training. She leads the SIB Training Group and co-leads the ELIXIR Training Platform. Her interests include bioinformatics education, proteomics, programming, and best practices for training scientists and instructors.
+                    </p>
+                </details>
+                <details>
+                    <summary><b>Andrea Guzman</b> | ELIXIR </summary>
+                    <img src="./assets/img/GUZMAN.png" alt="Andrea Guzman" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Current International Relations Officer at the ELIXIR Centre, where she manages international collaborations and projects. She serves as the ELIXIR Centre's point of contact for global collaborations and partner organizations. She has actively participated in symposia and conferences, strengthening research and data infrastructure ties in the life sciences between Europe and other regions, such as Latin America.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Gábor Erdös</b> | ELTE, Hungary </summary>
+                    <img src="./assets/img/ERDOS.png" alt="Gábor Erdös" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Assistant Professor and Principal Investigator at the Department of Biochemistry at Eötvös Loránd University (ELTE), Hungary, where he leads the Protein Dynamics Research Group. Trained as a bioengineer, he holds a PhD in structural biochemistry and has a decade of experience in bioinformatics. His career spans ten years of academic research alongside specialized experience in the pharmaceutical industry, with professional activity in Argentina and extensive collaborations across Europe, particularly in Italy and Israel. His research expertise centers on the characterization of intrinsically disordered proteins through the integration of biophysical concepts and advanced computational approaches. His work focuses on developing novel predictive methods for both general and functional protein disorder, with the goal of bridging artificial intelligence and biophysics. To this end, he employs a broad range of methodologies that includes machine learning, molecular dynamics simulations, and statistical mechanics to investigate the complex behavior and functional roles of intrinsically disordered proteins. He serves as Co-lead of the ELIXIR IDP Community and as the Hungarian Representative for COST. He is also a core member of the ML4NGP COST action, IDP2Biomed twinning project and a contributor of the IDPFun2 project.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Salvador Capella Gutierrez</b> | BSC-CNS, Spain </summary>
+                    <img src="./assets/img/GUTIERREZ.png" alt="Salvador Capella Gutierrez" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Leader of the Spanish National Bioinformatics (INB) Coordination Node at the Barcelona Supercomputing Center (BSC). His current focus is on the development of long-term infrastructures to facilitate the scientific benchmarking and technical monitoring of bioinformatics tools, web services and workflows in the context of ELIXIR, a pan-European distributed organization across 21 countries and more than 180 institutions. His team is also responsible for the technical coordination of ELIXIR in Spain, which implies their involvement in several bioinformatics projects. These include contributions to the RD-Connect and the BluePrint data portal development from a technical and scientific perspective. He received his PhD in Bioinformatics in 2012, awarded by the Center for Genomic Regulation (CRG) together with the Pompeu Fabra University (Barcelona, Spain). His work focused on applying evolutionary methods to different omics data to answer long-standing biological questions. From the beginning of his scientific career, Dr. Capella-Gutierrez has participated in different international consortia, which is reflected as part of his scientific publications covering an ample number of topics.
+                    </p>
+                </details>
+                <!--
+                <details>
+                    <summary><b>Silvina Fornasari</b> | UNQ / UNLP / CONICET, Argentina</summary>
+                    <img src="./assets/img/Fornasari.png" alt="Silvina Fornasari" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Biochemist and Adjunct Researcher at CONICET. Her research interests include molecular evolution, bioinformatics, and structural biochemistry of proteins.
+                    </p>
+                </details>
+                
+                <details>
+                    <summary><b>Laura Kamenetzky</b> | iB3-FCEN-UBA / CONICET, Argentina</summary>
+                    <img src="./assets/img/Kamenetzky.png" alt="Laura Kamenetzky" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Principal Investigator at CONICET and leader of the Genomics and Bioinformatics of Pathogens group at iB3-FCEN-UBA. Her work focuses on genomics, bioinformatics, and high-throughput sequencing technologies.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><b>Gloria Franco</b> | Universidade Federal de Minas Gerais, Brazil</summary>
+                    <img src="./assets/img/Franco.png" alt="Gloria Franco" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Full Professor at the Federal University of Minas Gerais and former President of the Brazilian Association of Bioinformatics and Computational Biology (AB3C). Her research focuses on genomics, transcriptomics, proteomics, and bioinformatics.
+                    </p>
+                </details>
+                --> 
+                <details>
+                    <summary><b>Ana Teresa de Vasconcelos</b> | National Laboratory of Scientific Computing, Brazil</summary>
+                    <img src="./assets/img/Vasconcelos.png" alt="Ana Teresa de Vasconcelos" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Researcher at the National Laboratory of Scientific Computing and former President of AB3C. Her work focuses on genomics, metagenomics, transcriptomics, and computational methods for genomics.
+                    </p>
+                </details>
+                
+                <details>
+                    <summary><b>Ariela Vergara</b> | Universidad de Talca, Chile</summary>
+                    <img src="./assets/img/Vergara.png" alt="Ariela Vergara" style="max-width: 180px; border-radius: 12px; margin: 15px 0;">
+                    <p style="color: black;">
+                        Researcher at the Center for Bioinformatics, Simulation and Modeling at Universidad de Talca. Her research focuses on computational structural biology of membrane proteins, molecular modeling, docking simulations, and molecular dynamics.
+                    </p>
+                </details>
+                
+                
+                  
+            </div>
+        </div>
+    </section>
+
+    <section id="registration-panel" class="registration-section tab-panel" role="tabpanel" aria-labelledby="registration-tab">
+    <div class="container">
+
+        <div class="section-header">
+            <h2>Registration Fees</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="committee-details">
+
+            <table style="width:100%; max-width:600px; margin:auto; border-collapse:collapse;">
+
+                <tr style="background:#f3f3f3;">
+                    <th style="padding:12px; text-align:left;">Category</th>
+                    <th style="padding:12px; text-align:right;">Fee</th>
+                </tr>
+
+                <tr>
+                    <td style="padding:12px;">PhD / Postdoc / Student</td>
+                    <td style="padding:12px; text-align:right;"><b>$50.000</b></td>
+                </tr>
+
+                <tr>
+                    <td style="padding:12px;">Researcher</td>
+                    <td style="padding:12px; text-align:right;"><b>$100.000</b></td>
+                </tr>
+
+                <tr>
+                    <td style="padding:12px;">Industry</td>
+                    <td style="padding:12px; text-align:right;"><b>$200.000</b></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+</section>
+
+    <section id="committee-panel" class="committee-section tab-panel" role="tabpanel" aria-labelledby="committee-tab">
+        <div class="container">
+            <div class="section-header">
+                <h2>Organizing Committee</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="committe-subtitle">
+                <h2>Organizing Committee</h2>
+            </div>
+
+            <div class="committee-details">
+                <h3><i class="fas fa-users"></i> Chairs</h3>
+                <ul>
+                    <li>Dra. Lucia Chemes | UNSAM-CONICET</li>
+                    <li>Dra. Patricia Saragüeta | IBYME-CONICET</li>
+                    <li>Dra. Georgina Stegmayer| SINC-UNL – CONICET</li>
+                </ul>
+            </div>
+            <div class="committee-details">
+                <h3><i class="fas fa-users"></i> Committee members</h3>
+                <ul>
+                    <li>Dra. Juliana Glavina | UNSAM - CONICET</li>
+                    <li>Lic. Clara Campos | IBYME-CONICET</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="inscripcion" class="registration-section">
+        <div class="container">
+            <div class="section-header">
+            <h2>Inscripciones</h2>
+            <div class="section-divider"></div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Inscripciones generales</h3>
+                        <div class="price">$10000</div>
+                        <p>Hasta el 15 de Noviembre</p>
+                    </div> 
+                <a href="#" target="_blank" class="btn-pricing">Inscribirse</a>
+            </div>
+        </div>
+    </section>
+        <section id="inscripcion" class="registration-section">
+        <div class="container">
+            <div class="section-header">
+            <h2>Certificados</h2>
+            <div class="section-divider"></div>
+                <div class="pricing-card">
+                <h4>Certificado Asistencia</h4>
+                <a href="https://drive.google.com/drive/folders/1mn6H36hHMO_N2NnNaUeYLgQga8dVWijO?usp=drive_link" target="_blank" class="download-pricing">Certificados Asistencia</a>
+                <h4>Certificados Charlas</h4>
+                <a href="https://drive.google.com/drive/folders/1uxuGdg1onKnTAR4Z-281pX-vzaP3ZUGc?usp=drive_link" target="_blank" class="download-pricing">Certificados Charlas</a>
+                <h4>Certificados Keynotes</h4>
+                <a href="https://drive.google.com/drive/folders/1n1qx5imCgbywlg1zOxr-6TbEQUHSkoTV?usp=drive_link" target="_blank" class="download-pricing">Certificados Keynotes</a>
+                <h4>Certificados Posters</h4>
+                <a href="https://drive.google.com/drive/folders/1WJraeXnT-2KdK4DBWBqs5NdaolL0vR2g?usp=drive_link" target="_blank" class="download-pricing">Certificados Posters</a>
+                <h4>Certificados Premios</h4>
+                <a href="https://drive.google.com/drive/folders/17icoLS1p6wZi2xcrpT855OBEVhPpo4TP?usp=drive_link" target="_blank" class="download-pricing">Premios</a>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <footer class="event-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Organized by</h4>
+                    <p>A2B2C - Asociación Argentina de Bioinformática y Biología Computacional</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> congreso@a2b2c.org</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/a2b2c?lang=es"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bioinformatica_ar/?hl=es"><i class="fab fa-instagram"></i></a>
+                        <a href="../../index.html"><i class="fab fa fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 A2B2C - XV Congress of the Argentine Association for Bioinformatics and Computational Biology (A2B2C)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabPanels = document.querySelectorAll(".tab-panel");
+
+        function activateTab(tabId, updateHash = true) {
+            tabButtons.forEach((button) => {
+                const isActive = button.dataset.tab === tabId;
+                button.classList.toggle("active", isActive);
+                button.setAttribute("aria-selected", String(isActive));
+                button.tabIndex = isActive ? 0 : -1;
+            });
+
+            tabPanels.forEach((panel) => {
+                panel.classList.toggle("active", panel.id === tabId);
+            });
+
+            if (updateHash) {
+                history.replaceState(null, "", "#" + tabId);
+            }
+
+            window.scrollTo({
+                top: document.querySelector(".conference-tabs").offsetTop,
+                behavior: "smooth"
+            });
+        }
+
+        tabButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                activateTab(button.dataset.tab);
+            });
+
+            button.addEventListener("keydown", (event) => {
+                const buttons = Array.from(tabButtons);
+                const currentIndex = buttons.indexOf(button);
+
+                if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+                    event.preventDefault();
+                    const direction = event.key === "ArrowRight" ? 1 : -1;
+                    const nextIndex = (currentIndex + direction + buttons.length) % buttons.length;
+                    buttons[nextIndex].focus();
+                    activateTab(buttons[nextIndex].dataset.tab);
+                }
+            });
+        });
+
+        const requestedPanel = window.location.hash.replace("#", "");
+        if (requestedPanel && document.getElementById(requestedPanel)) {
+            activateTab(requestedPanel, false);
+        }
+    </script>
+
+</body>
+</html>
