@@ -165,6 +165,40 @@
 .speaker-card.open .speaker-body {
     display: block;
 }
+.partner-logos {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(11, 94, 168, 0.18);
+    text-align: center;
+}
+
+.partner-logos h3 {
+    margin-bottom: 20px;
+    color: #0b5ea8;
+}
+
+.partner-logos-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logos-row img {
+    width: auto;
+    height: auto;
+    max-width: 240px;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .partner-logos-row img {
+        max-width: 190px;
+        max-height: 100px;
+    }
+}
 </style>
 </link></head>
 <body>
@@ -179,7 +213,7 @@
 </div>
 <div class="meta-item">
 <i class="fas fa-users"></i>
-<span>In presence</span>
+<span>In person</span>
 </div>
 <div class="meta-item">
 <i class="fas fa-map-marker-alt"></i>
@@ -254,6 +288,17 @@
 <li><i class="far fa-calendar-alt"></i> Congress Date: <strong>November 10–12, 2026</strong></li>
 </ul>
 </div>
+
+
+<div class="partner-logos">
+    <h3>In collaboration with</h3>
+    <div class="partner-logos-row">
+        <img src="./assets/img/IDPfun2.png" alt="IDPFun2"/>
+        <img src="./assets/img/ELIXIR_STEERS.png" alt="ELIXIR-STEERS"/>
+    </div>
+</div>
+
+
 </div>
 <div class="about-image">
 <div class="image-placeholder">
@@ -288,14 +333,10 @@
                         Technical Officer at ELIXIR, supporting the activities of the Data, Interoperability and Compute Platforms. He holds a BSc in Biotechnology and an MSc in Biomedical Genomics, with research experience focused on the gut microbiome and colorectal cancer.
                     </p></div></div><div class="speaker-card"><img alt="John Hancock" src="./assets/img/Hancock.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>John Hancock</b><div class="speaker-inst">ELIXIR</div></div><div class="speaker-body"><p style="color: black;">
                         ELIXIR Communities and Services Coordinator. He promotes collaboration between ELIXIR Nodes and the ELIXIR Hub and leads the development of research communities associated with ELIXIR use cases. He has extensive experience in computational biology, bioinformatics leadership, and research infrastructure management.
-                    </p></div></div><div class="speaker-card"><img alt="Patricia Palagi" src="./assets/img/Palagi.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Patricia Palagi</b><div class="speaker-inst">SIB Swiss Institute of Bioinformatics / ELIXIR</div></div><div class="speaker-body"><p style="color: black;">
-                        Biologist and computer scientist by training. She leads the SIB Training Group and co-leads the ELIXIR Training Platform. Her interests include bioinformatics education, proteomics, programming, and best practices for training scientists and instructors.
-                    </p></div></div><div class="speaker-card"><img alt="Andrea Guzman" src="./assets/img/GUZMAN.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Andrea Guzman</b><div class="speaker-inst">ELIXIR</div></div><div class="speaker-body"><p style="color: black;">
-                        Current International Relations Officer at the ELIXIR Centre, where she manages international collaborations and projects. She serves as the ELIXIR Centre's point of contact for global collaborations and partner organizations. She has actively participated in symposia and conferences, strengthening research and data infrastructure ties in the life sciences between Europe and other regions, such as Latin America.
-                    </p></div></div><div class="speaker-card"><img alt="Gábor Erdös" src="./assets/img/ERDOS.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Gábor Erdös</b><div class="speaker-inst">ELTE, Hungary</div></div><div class="speaker-body"><p style="color: black;">
+                   </p></div></div><div class="speaker-card"><img alt="Gábor Erdös" src="./assets/img/ERDOS.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Gábor Erdös</b><div class="speaker-inst">ELTE, Hungary</div></div><div class="speaker-body"><p style="color: black;">
                         Assistant Professor and Principal Investigator at the Department of Biochemistry at Eötvös Loránd University (ELTE), Hungary, where he leads the Protein Dynamics Research Group. Trained as a bioengineer, he holds a PhD in structural biochemistry and has a decade of experience in bioinformatics. His career spans ten years of academic research alongside specialized experience in the pharmaceutical industry, with professional activity in Argentina and extensive collaborations across Europe, particularly in Italy and Israel. His research expertise centers on the characterization of intrinsically disordered proteins through the integration of biophysical concepts and advanced computational approaches. His work focuses on developing novel predictive methods for both general and functional protein disorder, with the goal of bridging artificial intelligence and biophysics. To this end, he employs a broad range of methodologies that includes machine learning, molecular dynamics simulations, and statistical mechanics to investigate the complex behavior and functional roles of intrinsically disordered proteins. He serves as Co-lead of the ELIXIR IDP Community and as the Hungarian Representative for COST. He is also a core member of the ML4NGP COST action, IDP2Biomed twinning project and a contributor of the IDPFun2 project.
-                    </p></div></div><div class="speaker-card"><img alt="Salvador Capella Gutierrez" src="./assets/img/GUTIERREZ.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Salvador Capella Gutierrez</b><div class="speaker-inst">BSC-CNS, Spain</div></div><div class="speaker-body"><p style="color: black;">
-                        Leader of the Spanish National Bioinformatics (INB) Coordination Node at the Barcelona Supercomputing Center (BSC). His current focus is on the development of long-term infrastructures to facilitate the scientific benchmarking and technical monitoring of bioinformatics tools, web services and workflows in the context of ELIXIR, a pan-European distributed organization across 21 countries and more than 180 institutions. His team is also responsible for the technical coordination of ELIXIR in Spain, which implies their involvement in several bioinformatics projects. These include contributions to the RD-Connect and the BluePrint data portal development from a technical and scientific perspective. He received his PhD in Bioinformatics in 2012, awarded by the Center for Genomic Regulation (CRG) together with the Pompeu Fabra University (Barcelona, Spain). His work focused on applying evolutionary methods to different omics data to answer long-standing biological questions. From the beginning of his scientific career, Dr. Capella-Gutierrez has participated in different international consortia, which is reflected as part of his scientific publications covering an ample number of topics.
+                    </p></div></div><div class="speaker-card"><img alt="Salvador Capella Gutierrez" src="./assets/img/GUTIERREZ.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Salvador Capella Gutierrez</b><div class="speaker-inst">BSC / INB–ELIXIR Spain</div></div><div class="speaker-body"><p style="color: black;">
+                       Deputy Head of Node, Node Coordinator and Technical Coordinator of ELIXIR Spain, and Platform Lead of the ELIXIR Tools Platform. He leads the Spanish National Bioinformatics Institute (INB) Coordination Node at the Barcelona Supercomputing Center (BSC). His current focus is on the development of long-term infrastructures to facilitate the scientific benchmarking and technical monitoring of bioinformatics tools, web services and workflows in the context of ELIXIR, a pan-European distributed organization across 21 countries and more than 180 institutions. His team is also responsible for the technical coordination of ELIXIR in Spain, which implies their involvement in several bioinformatics projects. These include contributions to the RD-Connect and the BluePrint data portal development from a technical and scientific perspective. He received his PhD in Bioinformatics in 2012, awarded by the Center for Genomic Regulation (CRG) together with the Pompeu Fabra University (Barcelona, Spain). His work focused on applying evolutionary methods to different omics data to answer long-standing biological questions. From the beginning of his scientific career, Dr. Capella-Gutierrez has participated in different international consortia, which is reflected as part of his scientific publications covering an ample number of topics.
                     </p></div></div><div class="speaker-card"><img alt="Ana Teresa de Vasconcelos" src="./assets/img/Vasconcelos.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Ana Teresa de Vasconcelos</b><div class="speaker-inst">National Laboratory of Scientific Computing, Brazil</div></div><div class="speaker-body"><p style="color: black;">
                         Researcher at the National Laboratory of Scientific Computing and former President of AB3C. Her work focuses on genomics, metagenomics, transcriptomics, and computational methods for genomics.
                     </p></div></div><div class="speaker-card"><img alt="Ariela Vergara" src="./assets/img/Vergara.png" style="max-width: 180px; border-radius: 12px; margin: 15px 0;"/><div class="speaker-header"><b>Ariela Vergara</b><div class="speaker-inst">Universidad de Talca, Chile</div></div><div class="speaker-body"><p style="color: black;">
