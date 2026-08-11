@@ -138,18 +138,16 @@ body {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    opacity: 0.1;
+    opacity: 0.4;
 }
 
 .dna-pattern {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        radial-gradient(circle at 25% 25%, #FF66C4 2px, transparent 2px),
-        radial-gradient(circle at 75% 75%, #FF66C4 2px, transparent 2px);
-    background-size: 100px 100px;
-    animation: float 20s infinite linear;
+    inset: 0;
+    background-image: url("../img/a2b2c-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @keyframes float {
@@ -701,4 +699,83 @@ details p {
 details summary {
     font-size: 1.1rem;
     font-weight: 600;
+}
+.footer-content {
+    grid-template-columns: 1.4fr 1fr 1fr 280px;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+
+    width: fit-content;
+    padding: 14px 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.footer-logo img {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    filter: none;
+}
+@media (max-width: 900px) {
+    .footer-logo {
+        justify-self: center;
+    }
+}
+.funding-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    width: 100%;
+    align-items: start;
+}
+
+.funding-group {
+    text-align: center;
+}
+
+.funding-group .partner-logos-row {
+    min-height: 150px;
+    align-items: center;
+}
+
+.heritas-logo {
+    width: 240px;
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+    .funding-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+.committee-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.committee-column {
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+    .committee-columns {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 }
