@@ -199,6 +199,87 @@
         max-height: 100px;
     }
 }
+/* Scientific Program */
+#scientific-program-panel .program-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+#scientific-program-panel .program-day {
+    margin-bottom: 36px;
+}
+
+#scientific-program-panel .program-day h3 {
+    margin: 0;
+    padding: 16px 20px;
+    background: #0b5ea8;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.25rem;
+}
+
+#scientific-program-panel .program-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+#scientific-program-panel .program-table th,
+#scientific-program-panel .program-table td {
+    padding: 14px 18px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #dce5ee;
+}
+
+#scientific-program-panel .program-table thead {
+    background: #eef4fb;
+    color: #0b5ea8;
+}
+
+#scientific-program-panel .program-time {
+    width: 150px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+#scientific-program-panel .program-track th {
+    background: #dcecff;
+    color: #084b87;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#scientific-program-panel .program-break {
+    background: #f6f8fa;
+}
+
+#scientific-program-panel .program-title {
+    display: block;
+    margin-top: 5px;
+}
+
+#scientific-program-panel .program-parallel {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #dce5ee;
+}
+
+@media (max-width: 600px) {
+    #scientific-program-panel .program-table th,
+    #scientific-program-panel .program-table td {
+        padding: 10px 8px;
+        font-size: 0.88rem;
+        overflow-wrap: anywhere;
+    }
+
+    #scientific-program-panel .program-time {
+        width: 105px;
+        white-space: normal;
+    }
+}
 </style>
 </link></head>
 <body>
@@ -244,6 +325,17 @@
 <button aria-controls="about-panel" aria-selected="true" class="tab-button active" data-tab="about-panel" id="about-tab" role="tab" type="button">
                 About
             </button>
+            <button
+    aria-controls="scientific-program-panel"
+    aria-selected="false"
+    class="tab-button"
+    data-tab="scientific-program-panel"
+    id="scientific-program-tab"
+    role="tab"
+    type="button"
+>
+    Scientific Program
+</button>
 <button aria-controls="speakers-panel" aria-selected="false" class="tab-button" data-tab="speakers-panel" id="speakers-tab" role="tab" type="button">
                 Speakers
             </button>
@@ -364,6 +456,362 @@
 
 </div>
 </div>
+</section>
+<section
+    aria-labelledby="scientific-program-tab"
+    class="committee-section tab-panel"
+    id="scientific-program-panel"
+    role="tabpanel"
+    lang="en"
+>
+    <div class="container">
+        <div class="section-header">
+            <h2>Scientific Program</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="program-content">
+
+            <!-- NOVEMBER 9 -->
+            <div class="program-day">
+                <h3 id="program-november-9">November 9, 2026</h3>
+
+                <table class="program-table" aria-labelledby="program-november-9">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="program-time">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="program-time">09:00–12:00</th>
+                            <td><strong>WORKSHOP.</strong> ELIXIR Train the Trainer - Unit I</td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">12:00–13:00</th>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">13:00–16:00</th>
+                            <td><strong>WORKSHOP.</strong> ELIXIR Train the Trainer - Unit II</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOVEMBER 10 -->
+            <div class="program-day">
+                <h3 id="program-november-10">November 10, 2026</h3>
+
+                <table class="program-table" aria-labelledby="program-november-10">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="program-time">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="program-time">09:00–12:00</th>
+                            <td>
+                                <div><strong>WORKSHOP.</strong> ELIXIR Train the Trainer - Unit III</div>
+                                <div class="program-parallel">
+                                    <strong>WORKSHOP.</strong> AI Applied to Biological Data. Part I.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">09:30–10:30</th>
+                            <td><strong>WORKSHOP.</strong> IDPfun2 Workshop I (TBD)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">10:30–12:00</th>
+                            <td><strong>WORKSHOP.</strong> IDPfun2 Workshop II (TBD)</td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">12:00–13:00</th>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">13:00–16:00</th>
+                            <td>
+                                <div><strong>WORKSHOP.</strong> ELIXIR Train the Trainer - Unit IV</div>
+                                <div class="program-parallel">
+                                    <strong>WORKSHOP.</strong> AI Applied to Biological Data. Part II.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">16:00–16:45</th>
+                            <td>Registration</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">16:45–17:00</th>
+                            <td>Opening Ceremony</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">17:00–18:00</th>
+                            <td>
+                                <strong>KEYNOTE TALK.</strong> Ana Tereza Ribeiro de Vasconcelos (Brazil)
+                                <span class="program-title">
+                                    From Genomes to Knowledge: Bioinformatics at National Scale in Brazil
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">18:00–20:00</th>
+                            <td><strong>POSTER SESSION I</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">20:00</th>
+                            <td><strong>WELCOME COCKTAIL.</strong> Art, Science and Technology Event</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOVEMBER 11 -->
+            <div class="program-day">
+                <h3 id="program-november-11">November 11, 2026</h3>
+
+                <table class="program-table" aria-labelledby="program-november-11">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="program-time">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: Proteomics and Protein Structure</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">08:30–09:00</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Ariela Vergara Jaque (Chile)
+                                <span class="program-title">
+                                    Computational strategies for designing modulators of ion channel protein–protein interactions.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">09:00–09:30</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Miguel Andrade (Germany)
+                                <span class="program-title">
+                                    Sequence, context, and AI: studying the functional landscapes of intrinsically disordered regions
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">09:30–10:15</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">10:15–10:30</th>
+                            <td>Coffee Break</td>
+                        </tr>
+
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: Evolutionary, Comparative and Population Genomics</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">10:30–11:00</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Pierre Luisi (Argentina)
+                                <span class="program-title">
+                                    Ancient and Present-Day Genomes in the Southern Cone: Challenges for Reconstructing Population History
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">11:00–11:30</th>
+                            <td><strong>INVITED SPEAKER.</strong> Juliana Vianna (Chile)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">11:30–12:15</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">12:15–13:00</th>
+                            <td>
+                                <strong>ROUND TABLE.</strong> S. Capella Gutierrez, J. Vondrasek
+                                <span class="program-title">
+                                    Perspectives of Artificial Intelligence in the life sciences
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">13:00–14:00</th>
+                            <td>Lunch Break</td>
+                        </tr>
+
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: Genomics, Transcriptomics, Epigenetics and Metagenomics</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">14:00–14:30</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> S. Capella Gutierrez (Spain)
+                                <span class="program-title">
+                                    ELIXIR: Ten priority areas for AI in Life Sciences. How do we move forward?
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">14:30–15:00</th>
+                            <td><strong>INVITED SPEAKER.</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">15:00–15:45</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">15:45–15:55</th>
+                            <td><strong>SPONSOR TALK</strong></td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">15:55–16:30</th>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">16:30–18:30</th>
+                            <td><strong>POSTER SESSION II</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- NOVEMBER 12 -->
+            <div class="program-day">
+                <h3 id="program-november-12">November 12, 2026</h3>
+
+                <table class="program-table" aria-labelledby="program-november-12">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="program-time">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: Biological Databases and Bioimaging</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">08:30–09:00</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Henning Hermjakob (EBI).
+                                <span class="program-title">
+                                    The Complex Portal: From Mass Spectra to Structures
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">09:00–09:30</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Silvio Tosatto (Italy)
+                                <span class="program-title">
+                                    The DOME ecosystem: from recommendations to applications in Artificial Intelligence
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">09:30–10:15</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">10:15–10:30</th>
+                            <td>Coffee Break</td>
+                        </tr>
+
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: Artificial Intelligence and Systems Biology</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">10:30–11:00</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Juan Cortés (France)
+                                <span class="program-title">
+                                    Generative models for the design of disordered proteins
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">11:00–11:30</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Cristina Marino (Argentina)
+                                <span class="program-title">
+                                    Exploring the conformational landscape of the amylome
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">11:30–12:15</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">12:15–13:00</th>
+                            <td>
+                                <strong>ROUND TABLE.</strong> G. Farrel, S. Tosatto, J. Hancock
+                                <span class="program-title">
+                                    Leveraging research infrastructures for bioinformatics: the ELIXIR experience
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">13:00–14:00</th>
+                            <td>Lunch Break</td>
+                        </tr>
+
+                        <tr class="program-track">
+                            <th colspan="2">TRACK: IDPfun2 Consortium</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">14:00–14:30</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Gabor Erdos (Hungary)
+                                <span class="program-title">
+                                    A zero-shot thermodynamic potential for protein mutational stability
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">14:30–15:00</th>
+                            <td>
+                                <strong>INVITED SPEAKER.</strong> Nathalie Sibille (France)
+                                <span class="program-title">
+                                    Functional Disorder in Cell Signaling: Molecular Mechanisms and Case Studies
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">15:00–16:00</th>
+                            <td><strong>SHORT TALKS SELECTED FROM ABSTRACTS</strong></td>
+                        </tr>
+                        <tr class="program-break">
+                            <th scope="row" class="program-time">16:00–17:00</th>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">17:00–18:00</th>
+                            <td>
+                                <strong>KEYNOTE TALK.</strong> Salvador Ventura (Spain)
+                                <span class="program-title">
+                                    Targeting Protein Aggregation at the Interface of Experiment and Computation
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="program-time">18:00–18:45</th>
+                            <td><strong>PRIZES AND CLOSING CEREMONY</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
 </section>
 <section aria-labelledby="speakers-tab" class="committee-section tab-panel" id="speakers-panel" role="tabpanel">
 <div class="container">
