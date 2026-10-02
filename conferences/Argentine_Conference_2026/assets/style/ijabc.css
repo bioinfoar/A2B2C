@@ -194,6 +194,24 @@ section {
 .about-section {
     background: white;
 }
+.deadline-announcement {
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    padding: 24px 30px;
+    color: white;
+    background: #0056a6;
+    border: 4px solid #FF66C4;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 86, 166, 0.2);
+    text-align: center;
+}
+
+.deadline-announcement p {
+    margin: 0;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.35;
+}
 
 .about-content {
     display: grid;
