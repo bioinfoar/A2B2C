@@ -324,9 +324,11 @@
 
 /* Equal ELIXIR trainer cards */
 #elixir-trainers .workshop-mini-speaker {
-    display: flex;
-    flex-direction: column;
-    height: 230px;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 280px !important;
+    overflow: visible !important;
     box-sizing: border-box;
 }
 #elixir-trainers .workshop-mini-speaker img {
