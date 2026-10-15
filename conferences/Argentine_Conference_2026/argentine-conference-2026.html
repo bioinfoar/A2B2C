@@ -281,7 +281,167 @@
     }
 }
 </style>
-</link></head>
+</link><style id="workshop-mini-speakers">
+#workshops-panel #workshop-idpfun-1 .workshop-mini-speakers,
+#workshops-panel #workshop-idpfun-2 .workshop-mini-speakers,
+#workshops-panel #workshop-language-models > div[style*="display: flex"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 18px 0;
+}
+#workshops-panel .workshop-mini-speaker {
+    flex: 0 1 280px;
+    width: 280px;
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid #d7e1ec;
+    border-radius: 10px;
+    background: white;
+}
+#workshops-panel .workshop-mini-speaker img {
+    display: block;
+    width: auto;
+    max-width: 150px !important;
+    height: auto !important;
+    max-height: 190px;
+    margin: 0 auto !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+#workshops-panel .workshop-mini-speaker figcaption {
+    padding: 9px 12px;
+    color: white;
+    background: #5276b1;
+    font-weight: 700;
+}
+#workshops-panel .workshop-mini-speaker figcaption span {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Equal ELIXIR trainer cards */
+#elixir-trainers .workshop-mini-speaker {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    box-sizing: border-box;
+}
+#elixir-trainers .workshop-mini-speaker img {
+    width: 150px !important;
+    height: 100px !important;
+    max-height: 100px !important;
+    object-fit: contain !important;
+    margin: 0 auto 8px !important;
+    flex: 0 0 100px;
+}
+#elixir-trainers .workshop-mini-speaker figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 76px;
+    min-height: 76px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+#elixir-trainers .workshop-mini-speaker details {
+    height: 44px;
+    min-height: 44px;
+    flex: 0 0 44px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#elixir-trainers .workshop-mini-speaker details[open] {
+    height: auto;
+    flex-basis: auto;
+    overflow: visible;
+}
+</style>
+
+<style id="elixir-card-sizing">
+#elixir-trainers figure {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    min-height: 280px !important;
+    box-sizing: border-box;
+}
+#elixir-trainers img {
+    display: block !important;
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    margin: 0 auto 8px !important;
+    flex: 0 0 150px !important;
+}
+#elixir-trainers figcaption {
+    height: 76px !important;
+    min-height: 76px !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+</style>
+<style id="elixir-photo-zoom">
+
+#workshops-panel img[src*="DiCola.png"],
+#workshops-panel img[src*="Peixoto.png"] {
+    width: 150px !important;
+    height: 150px !important;
+    max-width: 150px !important;
+    max-height: 150px !important;
+    object-fit: cover !important;
+    object-position: center 15% !important;
+}
+
+</style>
+<style id="elixir-card-fill">
+
+#elixir-trainers figure {
+    width: 280px !important;
+    height: 280px !important;
+    min-height: 280px !important;
+    max-width: 280px !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    overflow: hidden !important;
+}
+#elixir-trainers figure img {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 180px !important;
+    max-height: none !important;
+    flex: 0 0 180px !important;
+    object-fit: cover !important;
+    object-position: center 15% !important;
+    margin: 0 !important;
+}
+#elixir-trainers figure figcaption {
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    flex: 1 1 auto !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 10px 12px !important;
+    margin: 0 !important;
+}
+
+</style>
+</head>
 <body>
 <section class="event-hero">
 <div class="hero-content">
@@ -628,53 +788,16 @@
             </ul>
         </div>
 
-        <div class="committee-details">
-
-            <div class="speakers-grid">
-
-                <!-- Valeria Di Cola -->
-                <div class="speaker-card">
-    <img src="./assets/img/DiCola.png" alt="Valeria Di Cola" style="max-width:180px;border-radius:12px;margin:15px 0;"/>
-
-    <div class="speaker-header">
-        <b>Valeria Di Cola</b>
-        <div class="speaker-inst">
-            Swiss Institute of Bioinformatics (SIB), ELIXIR Switzerland
-        </div>
-    </div>
-
-    <div class="speaker-body">
-        <p style="color:black;">
-            Bioinformatics Training Specialist at the Swiss Institute of Bioinformatics (SIB) and member of ELIXIR Switzerland. She develops bioinformatics training programmes and contributes to the ELIXIR-GOBLET Train-the-Trainer initiative.
-        </p>
-    </div>
-</div>
-
-                <!-- Luciana Peixoto -->
-               <div class="speaker-card">
-    <img src="./assets/img/Peixoto.png" alt="Luciana Peixoto" style="max-width:180px;border-radius:12px;margin:15px 0;"/>
-
-    <div class="speaker-header">
-        <b>Luciana Peixoto</b>
-        <div class="speaker-inst">
-            BioData.pt | ELIXIR Portugal
-        </div>
-    </div>
-
-    <div class="speaker-body">
-        <p style="color:black;">
-            Node Coordinator and Training Coordinator of ELIXIR Portugal (BioData.pt). She coordinates national ELIXIR activities and leads training initiatives, contributing to the ELIXIR Training Platform and the Train-the-Trainer programme.
-        </p>
-    </div>
-</div>
-            </div>
-
-        </div>
         <div style="max-width: 900px; margin: 40px auto 0; color: #333; font-size: 1rem; line-height: 1.7;">
 
             <h3 id="workshop-elixir-goblet" style="margin-bottom: 18px;">
                 ELIXIR-GOBLET TtT Workshop
             </h3>
+        </div>
+
+                <div style="max-width: 900px; margin: 40px auto 0; color: #333; font-size: 1rem; line-height: 1.7;">
+
+
 
             <p style="margin-bottom: 18px;">
                 <strong>Schedule:</strong> November 13–14, 9:00–17:00.
@@ -737,12 +860,23 @@
                 To register for the course, please fill the following form:
             </p>
 
-            <div style="max-width: 360px; margin: 25px auto 0;">
+                    <div class="workshop-mini-speakers" id="elixir-trainers" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 16px; margin: 18px 0;">
+            <figure class="workshop-mini-speaker">
+                <img src="./assets/img/DiCola.png" alt="Valeria Di Cola" style="max-width: 150px;">
+                <figcaption>Valeria Di Cola<span>Swiss Institute of Bioinformatics (SIB), ELIXIR Switzerland</span></figcaption>
+</figure>
+            <figure class="workshop-mini-speaker">
+                <img src="./assets/img/Peixoto.png" alt="Luciana Peixoto" style="max-width: 150px;">
+                <figcaption>Luciana Peixoto<span>BioData.pt, ELIXIR Portugal</span></figcaption>
+</figure>
+        </div>
+
+<div style="max-width: 360px; margin: 25px auto 0;">
                 <a href="https://forms.gle/1kJ2BNdXkXzgHV1y7"
                    target="_blank"
                    rel="noopener noreferrer"
-                   class="btn-pricing">
-                    Registration Form
+                   class="btn-pricing" style="text-align: center;">
+                    Register for the ELIXIR-GOBLET TtT Workshop
                 </a>
             </div>
 
@@ -754,8 +888,17 @@
                 <p><strong>Requirements:</strong> No prerequisites. Computers and internet access will be provided.</p>
                 <p>This session will introduce the concept of Intrinsically Disordered Proteins (IDPs) and explore how modern bioinformatics and AI-based tools can identify and characterize these regions directly from protein sequences. Through accessible examples and practical applications, participants will learn how computational predictions can help us better understand protein function, regulation, and their roles in health and disease.</p>
                 <p><strong>Registration deadline:</strong> October 25, 2026. <strong>Acceptance notification:</strong> October 30, 2026.</p>
-                <p><a class="btn-pricing" href="https://forms.gle/wsHiStVzry4DXMYC6" target="_blank" rel="noopener noreferrer">Register for IDPfun Workshop 1</a></p>
-                <img src="./assets/img/ERDOS.png" alt="Gábor Erdős" style="max-width: 150px; border-radius: 10px;">
+
+                <div class="workshop-mini-speakers">
+                    <figure class="workshop-mini-speaker">
+                        <img src="./assets/img/ERDOS.png" alt="Gábor Erdős" style="max-width: 150px; border-radius: 10px;">
+                        <figcaption>Gábor Erdős<span>ELTE, Hungary</span></figcaption>
+                    </figure>
+                </div>
+
+                <div style="max-width: 360px; margin: 30px auto 0; text-align: center;">
+                    <a class="btn-pricing" href="https://forms.gle/wsHiStVzry4DXMYC6" target="_blank" rel="noopener noreferrer">Register for IDPfun Workshop 1</a>
+                </div>
             </article>
 
             <article id="workshop-idpfun-2" style="margin: 36px 0; padding: 24px; border: 1px solid #d7e1ec; border-radius: 10px;">
@@ -765,8 +908,17 @@
                 <p><strong>Requirements:</strong> Basic understanding of protein biology. Computers and internet access will be provided.</p>
                 <p>This workshop will introduce key systems biology resources developed by the Molecular Networks Team at EMBL-European Bioinformatics Institute, in particular the IntAct database of molecular interactions, the Complex Portal, and the Reactome database of biomolecular pathways. It will provide an in-depth view of their content and use, and their connection to Intrinsically Disordered Proteins.</p>
                 <p><strong>Registration deadline:</strong> October 25, 2026. <strong>Acceptance notification:</strong> October 30, 2026.</p>
-                <p><a class="btn-pricing" href="https://forms.gle/7pVZNKBpun7hFgsB6" target="_blank" rel="noopener noreferrer">Register for IDPfun Workshop 2</a></p>
-                <img src="./assets/img/Hermjakob.png" alt="Henning Hermjakob" style="max-width: 150px; border-radius: 10px;">
+
+                <div class="workshop-mini-speakers">
+                    <figure class="workshop-mini-speaker">
+                        <img src="./assets/img/Hermjakob.png" alt="Henning Hermjakob" style="max-width: 150px; border-radius: 10px;">
+                        <figcaption>Henning Hermjakob<span>EMBL-European Bioinformatics Institute</span></figcaption>
+                    </figure>
+                </div>
+
+                <div style="max-width: 360px; margin: 30px auto 0; text-align: center;">
+                    <a class="btn-pricing" href="https://forms.gle/7pVZNKBpun7hFgsB6" target="_blank" rel="noopener noreferrer">Register for IDPfun Workshop 2</a>
+                </div>
             </article>
 
             <article id="workshop-language-models" style="margin: 36px 0; padding: 24px; border: 1px solid #d7e1ec; border-radius: 10px;">
@@ -776,16 +928,22 @@
                 <p><strong>Fee:</strong> AR$ 60,000 (general registration) or AR$ 30,000 for conference attendees.</p>
                 <p>This workshop offers a theoretical and hands-on introduction to the use of language models for biological sequence analysis. We will explore how these models process protein and DNA sequences, identify context-dependent relationships, and generate numerical representations that can be applied to different bioinformatics problems. Through examples and guided exercises, participants will work with sequences, analyze the representations obtained, and interpret their potential applications. Current uses in genomics and proteomics will also be discussed, along with the criteria needed to evaluate results, recognize model limitations, and use these models critically in research contexts.</p>
                 <p><strong>Registration deadline:</strong> October 25, 2026. <strong>Acceptance notification:</strong> October 30, 2026.</p>
-                <p><a class="btn-pricing" href="https://docs.google.com/forms/d/e/1FAIpQLSeDLOJPnoAqsJs-xjSf6JsryVnNW9E17WGBO6wJ2A5NTlpFww/viewform" target="_blank" rel="noopener noreferrer">Register for the Language Models workshop</a></p>
+
                 <div style="display: flex; flex-wrap: wrap; gap: 24px;">
-                    <figure style="margin: 0;">
+                    <figure class="workshop-mini-speaker" style="margin: 0;">
                         <img src="./assets/img/clara-campos.jpg" alt="Clara Campos" style="max-width: 150px; max-height: 190px; object-fit: cover; border-radius: 10px;">
-                        <figcaption>Clara Campos</figcaption>
+                        <figcaption>Clara Campos<span>IBYME · CONICET</span></figcaption>
+                        <details style="max-width: 280px; margin: 8px auto; color: #333;"><summary style="cursor: pointer; text-align: center; font-size: 0.9rem;">Short bio</summary><p style="margin: 8px 0; font-size: 0.9rem; line-height: 1.5; text-align: left;">Clara Campos is a CONICET doctoral fellow at IBYME, where she studies jaguar genomics and molecular evolution. She teaches programming, data analysis, and artificial intelligence at UBA.</p></details>
                     </figure>
-                    <figure style="margin: 0;">
+                    <figure class="workshop-mini-speaker" style="margin: 0;">
                         <img src="./assets/img/gabriel-iglesias.jpg" alt="Gabriel Iglesias" style="max-width: 150px; max-height: 190px; object-fit: cover; border-radius: 10px;">
-                        <figcaption>Gabriel Iglesias</figcaption>
+                        <figcaption>Gabriel Iglesias<span>UNQ · UNAHUR · CONICET</span></figcaption>
+                        <details style="max-width: 280px; margin: 8px auto; color: #333;"><summary style="cursor: pointer; text-align: center; font-size: 0.9rem;">Short bio</summary><p style="margin: 8px 0; font-size: 0.9rem; line-height: 1.5; text-align: left;">Gabriel Iglesias holds a PhD from UNQ and is a CONICET associate researcher. He directs UNAHUR’s Molecular Virology Laboratory and teaches bioinformatics at UNQ and UNAHUR.</p></details>
                     </figure>
+                </div>
+
+                <div style="max-width: 360px; margin: 30px auto 0; text-align: center;">
+                    <a class="btn-pricing" href="https://docs.google.com/forms/d/e/1FAIpQLSeDLOJPnoAqsJs-xjSf6JsryVnNW9E17WGBO6wJ2A5NTlpFww/viewform" target="_blank" rel="noopener noreferrer">Register for the Language Models workshop</a>
                 </div>
             </article>
         </div>
