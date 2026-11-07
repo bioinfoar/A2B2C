@@ -24,7 +24,8 @@
             gap: 10px;
             padding-top: 14px;
             padding-bottom: 14px;
-            overflow-x: auto;
+            flex-wrap: wrap;
+            overflow-x: visible;
         }
 
         .tab-button {
@@ -37,6 +38,7 @@
             font-weight: 700;
             cursor: pointer;
             white-space: nowrap;
+            flex-shrink: 0;
             transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
         }
 
@@ -65,7 +67,7 @@
 
         @media (max-width: 700px) {
             .conference-tabs .container {
-                justify-content: flex-start;
+                justify-content: center;
                 padding-left: 16px;
                 padding-right: 16px;
             }
@@ -500,6 +502,9 @@
 >
     Scientific Program
 </button>
+<button aria-controls="venue-panel" aria-selected="false" class="tab-button" data-tab="venue-panel" id="venue-tab" role="tab" type="button">
+                Venue Information
+            </button>
 <button aria-controls="speakers-panel" aria-selected="false" class="tab-button" data-tab="speakers-panel" id="speakers-tab" role="tab" type="button">
                 Speakers
             </button>
@@ -532,6 +537,34 @@
 
 </div>
 </nav>
+<section aria-labelledby="venue-tab" class="about-section tab-panel" id="venue-panel" role="tabpanel" lang="en">
+<div class="container">
+<div class="section-header">
+<h2>Venue Information</h2>
+<div class="section-divider"></div>
+</div>
+<div style="max-width: 940px; margin: 0 auto; line-height: 1.65;">
+<p><strong>Venue:</strong> IFIBYNE, Ciudad Universitaria, UBA.</p>
+<p><strong>Location:</strong> <a href="https://maps.app.goo.gl/EcGpRPWUghjJefMA8" target="_blank" rel="noopener noreferrer">Open IFIBYNE in Google Maps</a>.</p>
+<div style="padding: 16px 20px; margin: 24px 0; border-left: 5px solid #c1272d; background: #fff3f3; color: #333;">
+<p><strong>PLEASE PAY ATTENTION TO RESTRICTED TRAFFIC DUE TO THE POPE'S VISIT!</strong></p>
+<p><strong>CONSIDER TAKING EXTRA TIME TO TRAVEL TO THE VENUE ON WEDNESDAY AS PUBLIC TRANSPORTATION WILL BE SLOWER THAN USUAL.</strong></p>
+<p>More information on street closures and alternative roads can be found <a href="https://buenosaires.gob.ar/noticias/cortes-y-desvios-por-la-visita-del-papa-leon-xiv" target="_blank" rel="noopener noreferrer">here</a>.</p>
+</div>
+<h3>How to reach IFIBYNE</h3>
+<p>To reach IFIBYNE in Buenos Aires, Argentina, you can take several public city bus lines that stop directly inside or near the campus.</p>
+<ul style="margin: 12px 0 24px 24px;">
+<li><strong>Bus lines (colectivos):</strong> 28, 33, 37, 42, 45, 107, and 160.</li>
+<li><strong>Train:</strong> Belgrano Norte line, Ciudad Universitaria station.</li>
+<li><strong>Address / Entrance:</strong> Pabellón IFIBYNE, with entry via Av. Costanera Rafael Obligado / Av. Intendente Güiraldes, Ciudad Universitaria, CABA.</li>
+</ul>
+<figure style="margin: 24px 0; text-align: center;">
+<img src="./assets/img/ifibyne-venue-map.png" alt="Map of Ciudad Universitaria showing the IFIBYNE building marked with a red location pin and arrow" style="display: block; width: 100%; height: auto; border-radius: 8px;" loading="lazy"/>
+<figcaption>IFIBYNE (UBA-CONICET), Ciudad Universitaria — red marker shows the venue.</figcaption>
+</figure>
+</div>
+</div>
+</section>
 <section aria-labelledby="about-tab" class="about-section tab-panel active" id="about-panel" role="tabpanel">
 <div class="container">
 <div class="section-header">
@@ -662,7 +695,7 @@
                 <p style="margin: 0;"><strong>Workshops: November 13–14, 2026. See the <a href="#workshops-panel">Workshops tab</a> for details.</strong></p>
             </div>
             <p style="margin-bottom: 28px;">
-                <a href="./assets/docs/XVCAB2C_Program.pdf?v=20261103"
+                <a href="./assets/docs/XVCAB2C_Program.pdf?v=20261107"
                    target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-file-download"></i> Download the scientific program (PDF)
                 </a>
@@ -687,7 +720,7 @@
 <li><strong>Galo Ballati (UNQ, BA, Argentina)</strong><br/>Molecular dynamics simulations support a dynamic RNA-recognition hotspot in the intrinsically disordered N-terminal domain of the androgen receptor</li>
 </ul></td></tr>
 <tr class="program-break"><th scope="row" class="program-time">11:55–12:00</th><td>Short Break</td></tr>
-<tr><th scope="row" class="program-time">12:00–12:45</th><td><strong>Round Table 1: Perspectives of Artificial Intelligence in the life sciences</strong><p>Chairs: Salvador Capella, Georgina Stegmayer</p><ul><li>Gabor Erdos (ELTE, Hungary)</li><li>Jiri Vondrasek (ELIXIR, Czech Republic)</li><li>Ana Tereza de Vasconcelos (LNCC, Brazil)</li><li>Henning Hermjakob (EMBL-EBI, UK)</li><li>Rodrigo Diaz (UNSAM, Argentina)</li></ul></td></tr>
+<tr><th scope="row" class="program-time">12:00–12:45</th><td><strong>Round Table 1: Perspectives of Artificial Intelligence in the life sciences</strong><p>Chairs: Salvador Capella, Georgina Stegmayer</p><ul><li>Gabor Erdos (ELTE, Hungary)</li><li>Jiri Vondrasek (ELIXIR, Czech Republic)</li><li>Ana Tereza de Vasconcelos (LNCC, Brazil)</li><li>Henning Hermjakob (EMBL-EBI, UK)</li><li>Rodrigo Díaz (UNSAM &amp; ITBA, Argentina)</li></ul></td></tr>
 <tr class="program-break"><th scope="row" class="program-time">12:45–14:00</th><td>Lunch Break</td></tr>
 <tr class="program-track"><th colspan="2" scope="colgroup">Session 2: Evolutionary, Comparative and Population Genomics<br/><span style="font-weight: 400;">Chair: Patricia Saragüeta</span></th></tr>
 <tr><th scope="row" class="program-time">14:00–14:30</th><td><strong>Invited Speaker: Pierre Luisi (UNC, Argentina)</strong><span class="program-title">Ancient and present-day genomes in the southern cone: challenges for reconstructing population history</span></td></tr>
