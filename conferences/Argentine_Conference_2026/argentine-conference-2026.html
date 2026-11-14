@@ -76,6 +76,56 @@
                 padding: 10px 16px;
             }
         }
+
+        /* Alineacion centrada de todos los botones del congreso. */
+        .tab-button,
+        .btn-hero,
+        .btn-pricing,
+        .download-pricing,
+        .program-download-button {
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* Enlaces de descarga destacados como botones. */
+        .program-downloads {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .program-download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: min(100%, 360px);
+            box-sizing: border-box;
+            min-height: 56px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            background: #0b5ea8;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .program-download-button:hover {
+            background: #084b87;
+            color: #fff;
+        }
+
+        .program-download-button:focus-visible {
+            outline: 3px solid #ff64c7;
+            outline-offset: 3px;
+        }
+
+        /* Los botones de certificados tambien alinean su texto. */
+        .download-pricing {
+            display: inline-block;
+        }
     
 /* Galería de speakers */
 
@@ -696,18 +746,20 @@
                 </p>
                 <p style="margin: 0;"><strong>Workshops: November 13–14, 2026. See the <a href="#workshops-panel">Workshops tab</a> for details.</strong></p>
             </div>
-            <p style="margin-bottom: 28px;">
-                <a href="./assets/docs/XVCAB2C_Program.pdf?v=20261110"
+            <div class="program-downloads">
+                <a class="program-download-button"
+                   href="./assets/docs/XVCAB2C_Program.pdf?v=20261110"
                    target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-download"></i> Download the scientific program (PDF)
+                    <i class="fas fa-file-download" aria-hidden="true"></i>
+                    <span>Download the scientific program (PDF)</span>
                 </a>
-            </p>
-            <p style="margin-bottom: 28px;">
-                <a href="./assets/docs/XVCAB2C_book_of_abstracts.pdf"
+                <a class="program-download-button"
+                   href="./assets/docs/XVCAB2C_book_of_abstracts.pdf"
                    target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-book-open"></i> Book of Abstracts (PDF)
+                    <i class="fas fa-book-open" aria-hidden="true"></i>
+                    <span>Book of Abstracts (PDF)</span>
                 </a>
-            </p>
+            </div>
 
 <div class="program-day">
 <h3 id="program-november-11">November 11, 2026</h3>
