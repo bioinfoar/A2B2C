@@ -126,6 +126,40 @@
         .download-pricing {
             display: inline-block;
         }
+
+        #certificates-panel .certificate-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin: 0 auto 16px;
+            max-width: 1000px;
+        }
+        #certificates-panel .certificate-row:last-child {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        #certificates-panel .program-download-button {
+            width: 100%;
+            max-width: none;
+            min-height: 64px;
+            text-align: center;
+            justify-content: center;
+            overflow-wrap: anywhere;
+        }
+        @media (max-width: 700px) {
+            #certificates-panel .certificate-row,
+            #certificates-panel .certificate-row:last-child {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            #certificates-panel .certificate-row:not(:last-child) > a:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+        @media (max-width: 420px) {
+            #certificates-panel .certificate-row,
+            #certificates-panel .certificate-row:last-child {
+                grid-template-columns: 1fr;
+            }
+        }
     
 /* Galería de speakers */
 
@@ -583,6 +617,9 @@
             </button>
 <button aria-controls="committee-panel" aria-selected="false" class="tab-button" data-tab="committee-panel" id="committee-tab" role="tab" type="button">
                 Committee
+            </button>
+<button aria-controls="certificates-panel" aria-selected="false" class="tab-button" data-tab="certificates-panel" id="certificates-tab" role="tab" type="button">
+                Certificates
             </button>
 
 </div>
@@ -1378,6 +1415,33 @@
         </div>
     </section>
     -->
+<section aria-labelledby="certificates-tab" class="about-section tab-panel" id="certificates-panel" role="tabpanel" lang="en">
+    <div class="container">
+        <div class="section-header">
+            <h2>Certificates</h2>
+            <div class="section-divider"></div>
+        </div>
+        <p style="text-align: center; margin-bottom: 28px;">Select the corresponding category to access your certificate.</p>
+        <div class="certificate-grid">
+            <div class="certificate-row">
+                <a class="program-download-button" href="https://drive.google.com/open?id=14dAw5fv_y2i1pMRChjrTfFvFVBZQvivz&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Keynote</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1YUdmw9aHHm7mkTay2HTgqbJ5RXm5yLmN&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Speaker</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1NEGcG5ogO9PRhhtiDPSe28RKF1hOO0Aj&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Panelist</a>
+            </div>
+            <div class="certificate-row">
+                <a class="program-download-button" href="https://drive.google.com/open?id=123_PFLLPBHwaHVLoD9Y__HHpxhdxmfoy&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Attendee</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1tb6TCpTqu8WXL-C2aRja35-c_CSotJB8&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Poster</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=14SdphTohe_emkE4lhLw38eqZn_x47spr&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Short talk</a>
+            </div>
+            <div class="certificate-row">
+                <a class="program-download-button" href="https://drive.google.com/open?id=15ChOkuY8i8vvelb8BFv2NMHJrBZ7ujGJ&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Organizing Committee</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1PILKwrc73dU6RQ9_P4PWFQQGYVAnfVyv&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Scientific Committee</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1qcfK9RkqulRA2BIBN3fvEnxtpJlTw_Gi&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Abstract reviewer</a>
+                <a class="program-download-button" href="https://drive.google.com/open?id=1VyPsuD8VJ51zlpDBSdIXw7i62c-LYIDc&amp;usp=drive_copy" target="_blank" rel="noopener noreferrer">Volunteer</a>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="event-footer">
 <div class="container">
 <div class="footer-content">
